@@ -13,10 +13,24 @@ interface Project {
 const projects: Project[] = [
     {
         title: "QUICK-CART",
-        description: "Quick-Cart is a multi-vendor e-commerce platform that allows customers to browse products, manage their cart and make purchases. Venors can manage their products and view orders, while Administrators have access to a dashboard for overall system management.",
+        description: "Quick-Cart is a multi-vendor e-commerce mobile application that allows customers to browse products, manage their cart and make purchases. Venors can manage their products and view orders, while Administrators have access to a dashboard for overall system management.",
         image: "/assets/images/qcImg.png",
         technologies: ["React Native", "React", "Express.js", "Node.js", "Prisma", "MongoDB"],
         liveUrl: "https://youtu.be/o5a2ZY5OSCg?si=UiTzs_EH7zrr3WHU"
+    },
+    {
+        title: "Largo Integrated",
+        description: "Largo Integrated Value Ltd is a dynamic Nigerian enterprise offering integrated business solutions across multiple sectors. They deliver excellence in general trading, food & beverage production, agricultural services, renewable energy solutions, and business support.",
+        image: "/assets/images/largo.png",
+        technologies: ["TypeScript", "Tailwind CSS", "Next.js", "Framer"],
+        liveUrl: "https://www.largointegrated.com"
+    },
+    {
+        title: "MoveIt",
+        description: "MoveIt, an e-commerce mobile application that allows customers to browse products (cars) then proceed to book and make payments for car rentals. With a website for administrators to have access to a dashboard for overall product management.",
+        image: "/assets/images/moveit.png",
+        technologies: ["React Native", "TypeScript", "Next.js", "Node.js", "Prisma", "PostgreSQL"],
+        liveUrl: "https://youtu.be/u_2vPF3azbU"
     },
     {
         title: "BLESSED BALES AND BUNDLE",
@@ -78,9 +92,9 @@ const Projects = () => {
                                 <motion.div
                                     key={index}
                                     variants={item}
-                                    className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
+                                    className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 w-[300px] h-[500px] flex flex-col"
                                 >
-                                    <div className="relative h-48">
+                                    <div className="relative h-40">
                                         <Image
                                             src={project.image}
                                             alt={project.title}
@@ -89,15 +103,15 @@ const Projects = () => {
                                         />
                                     </div>
 
-                                    <div className="p-6">
+                                    <div className="p-4">
                                         <h3 className="text-xl text-blue-600 font-semibold mb-2">{project.title}</h3>
-                                        <p className="text-gray-500 mb-4">{project.description}</p>
+                                        <p className="text-sm text-gray-500 mb-4">{project.description}</p>
 
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.technologies.map((tech, i) => (
                                                 <span
                                                     key={i}
-                                                    className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                                                    className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs"
                                                 >
                                                     {tech}
                                                 </span>
@@ -109,7 +123,7 @@ const Projects = () => {
                                                 href={project.liveUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-gray-500 hover:text-blue-800"
+                                                className="text-sm text-gray-500 hover:text-blue-800"
                                             >
                                                 Live Demo
                                             </a>
