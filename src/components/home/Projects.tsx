@@ -92,7 +92,7 @@ const Projects = () => {
                                 <motion.div
                                     key={index}
                                     variants={item}
-                                    className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 w-[300px] h-[500px] flex flex-col"
+                                    className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 w-[350px] h-[500px] flex flex-col"
                                 >
                                     <div className="relative h-40">
                                         <Image

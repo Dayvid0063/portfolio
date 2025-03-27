@@ -24,11 +24,18 @@ const skills = [
 
 const certifications = [
     {
-        name: "Software Engineering",
+        name: "Software Engineering - Backend Specialist",
         issuer: "ALX Africa",
         date: "September 2024",
         link: "https://intranet.alxswe.com/certificates/2L8mznRG7s",
         id: "2L8mznRG7s"
+    },
+    {
+        name: "Professional Developers(ProDev) - Frontend Program",
+        issuer: "ALX Africa",
+        date: "March 2025",
+        link: "https://intranet.alxswe.com/certificates/23MxeNhFEX",
+        id: "23MxeNhFEX"
     },
     {
         name: "Artificial Intelligence Career Essentials",
