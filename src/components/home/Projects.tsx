@@ -36,6 +36,15 @@ const projects: Project[] = [
         category: "Web App"
     },
     {
+        title: "BLESSED BALES AND BUNDLE",
+        description: "Blessed Bales and Bundles is a website designed for customers to shop for Fabrics with an intuitive interface and seamless shopping experience.",
+        image: "/assets/images/blessedbb.png",
+        technologies: ["Next.js", "TypeScript", "Node.js(Express)",  "Shadcn", "Tailwind CSS"],
+        liveUrl: "https://blessed-bales-and-bundles.vercel.app",
+        githubUrl: "https://github.com/Dayvid0063",
+        category: "E-commerce"
+    },
+    {
         title: "MoveIt",
         description: "MoveIt, an e-commerce mobile application that allows customers to browse products (cars) then proceed to book and make payments for car rentals. With a website for administrators to have access to a dashboard for overall product management.",
         image: "/assets/images/moveit.png",
@@ -45,13 +54,22 @@ const projects: Project[] = [
         category: "E-commerce"
     },
     {
-        title: "BLESSED BALES AND BUNDLE",
-        description: "Blessed Bales and Bundles is a website designed for customers to shop for Fabrics with an intuitive interface and seamless shopping experience.",
-        image: "/assets/images/blessedbb.png",
-        technologies: ["React", "TypeScript", "Strapi", "Tailwind CSS"],
-        liveUrl: "/#projects",
+        title: "Med-Equip Solutions",
+        description: "Your trusted partner in medical equipment solutions, dedicated to improving healthcare delivery worldwide through innovative technology and exceptional service",
+        image: "/assets/images/med-equip.png",
+        technologies: ["Next.js", "TypeScript", "Node.js(Express)",  "Shadcn", "Tailwind CSS"],
+        liveUrl: "https://medical-equip.vercel.app",
         githubUrl: "https://github.com/Dayvid0063",
         category: "E-commerce"
+    },
+    {
+        title: "Rivers Youth Hub",
+        description: "Rivers Youth Hub is a comprehensive digital platform that provides skill development programs, job placement assistance, entrepreneurship support, and leadership training to empower Rivers State youth.",
+        image: "/assets/images/riversyouth-hub.png",
+        technologies: ["Next.js", "TypeScript", "Shadcn", "Tailwind CSS"],
+        liveUrl: "https://www.nycnriversstate.com",
+        githubUrl: "https://github.com/Dayvid0063",
+        category: "Web App"
     },
     {
         title: "LOCALBIZ CONNECT",
