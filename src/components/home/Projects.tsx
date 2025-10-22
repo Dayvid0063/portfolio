@@ -27,6 +27,33 @@ const projects: Project[] = [
         category: "Mobile"
     },
     {
+        title: "MySchool Research",
+        description: "Publish, discover, and collaborate on academic work with MySchool Research.",
+        image: "/assets/images/schoolresearch.png",
+        technologies: ["Nuxt.js, TypeScript", "Pinia", "MongoDB"],
+        liveUrl: "https://myschoolresearch.org",
+        githubUrl: "#",
+        category: "Web App",
+    },
+    {
+        title: "DCI WIKI",
+        description: "Open system for registering and protecting research, creative content, and cultural heritage.",
+        image: "/assets/images/dciwiki.png",
+        technologies: ["Nuxt.js, TypeScript", "Pinia", "MongoDB"],
+        liveUrl: "https://dci.wiki",
+        githubUrl: "#",
+        category: "Web App",
+    },
+    {
+        title: "MySchool Academy",
+        description: "MySchool Academy is dedicated to making STEM education practical and accessible for African students, transforming them from technology consumers to creators.",
+        image: "/assets/images/schoolacademy.png",
+        technologies: ["Nuxt.js, TypeScript", "Pinia", "MongoDB"],
+        liveUrl: "https://myschoolacademy.org",
+        githubUrl: "#",
+        category: "Web App",
+    },
+    {
         title: "Largo Integrated",
         description: "Largo Integrated Value Ltd is a dynamic Nigerian enterprise offering integrated business solutions across multiple sectors. They deliver excellence in general trading, food & beverage production, agricultural services, renewable energy solutions, and business support.",
         image: "/assets/images/largo.png",
