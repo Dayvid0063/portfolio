@@ -146,7 +146,7 @@ const projects: Project[] = [
 ];
 
 const Projects = () => {
-    const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+    const [, setHoveredProject] = useState<number | null>(null);
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const container = {
