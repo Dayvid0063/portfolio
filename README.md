@@ -61,5 +61,4 @@ src/
 ```
 
 ## Deployment
-
 The site is deployed on Vercel. Any push to the main branch will trigger automatic deployment.
