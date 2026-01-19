@@ -143,10 +143,10 @@ const About = () => {
                     </motion.div>
 
                     {/* Main Content Grid */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
                         {/* Profile Image */}
                         <motion.div
-                            className="relative w-80 h-96 mx-auto lg:mx-0"
+                            className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 mx-auto lg:mx-0"
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
@@ -172,18 +172,18 @@ const About = () => {
                             className="space-y-6"
                         >
                             <div className="prose prose-lg">
-                                <p className="text-lg text-gray-700 leading-relaxed">
+                                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                                     <span className="font-semibold text-gray-700">As a goal-focused and
                                         technically skilled Software Engineer,
                                         I am passionate about contributing to the development of innovative software solutions.</span>
                                 </p>
-                                <p className="text-lg text-gray-700 leading-relaxed">
+                                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                                     <span className="font-semibold">With a background in Web and Mobile applications development,
                                         I bring a blend of creativity and technical expertise to every project I undertake.
                                         I believe in writing clean, maintainable code that not only works but is also a joy for other developers
                                         to work with.</span>
                                 </p>
-                                <p className="text-lg text-gray-700 leading-relaxed">
+                                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                                     <span className="font-semibold">My goal is to create software that not only meets but exceeds expectations,
                                         delivering value to users and stakeholders.</span>
                                 </p>
@@ -191,27 +191,27 @@ const About = () => {
 
                             {/* Stats Cards */}
                             <motion.div
-                                className="grid grid-cols-3 gap-4 mt-8"
+                                className="grid grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8"
                                 variants={staggerContainer}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
                             >
                                 {[
-                                    { number: "2+", label: "Years Experience" },
+                                    { number: "3+", label: "Years Experience" },
                                     { number: "15+", label: "Projects Completed" },
                                     { number: "6", label: "Certifications" }
                                 ].map((stat) => (
                                     <motion.div
                                         key={stat.label}
                                         variants={skillCard}
-                                        className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100"
+                                        className="text-center p-3 sm:p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100"
                                         whileHover={{ scale: 1.05, y: -5 }}
                                     >
-                                        <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                        <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                                             {stat.number}
                                         </div>
-                                        <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
+                                        <div className="text-xs sm:text-sm text-gray-600 mt-1">{stat.label}</div>
                                     </motion.div>
                                 ))}
                             </motion.div>
@@ -219,7 +219,7 @@ const About = () => {
                             {/* Certifications Button */}
                             <motion.button
                                 onClick={() => setIsModalOpen(true)}
-                                className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                                className="group flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-300 text-sm sm:text-base"
                                 whileHover={{ scale: 1.05, y: -2 }}
                                 whileTap={{ scale: 0.95 }}
                                 initial={{ opacity: 0, y: 20 }}
@@ -227,9 +227,9 @@ const About = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Award size={20} className="group-hover:rotate-12 transition-transform" />
-                                View Certifications
-                                <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+                                <Award size={18} className="group-hover:rotate-12 transition-transform sm:w-5 sm:h-5" />
+                                <span>View Certifications</span>
+                                <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform sm:w-4 sm:h-4" />
                             </motion.button>
                         </motion.div>
                     </div>
